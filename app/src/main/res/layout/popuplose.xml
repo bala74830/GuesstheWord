@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/popup_lose"
+    android:background="@color/white"
     xmlns:app="http://schemas.android.com/apk/res-auto">
-
     <com.airbnb.lottie.LottieAnimationView
         android:id="@+id/lottie"
         android:layout_width="170dp"
@@ -17,22 +17,23 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.086"
         app:lottie_autoPlay="true"
+        android:visibility="invisible"
         app:lottie_rawRes="@raw/lose" />
-
     <TextView
         android:layout_width="191dp"
         android:layout_height="66dp"
         android:layout_marginTop="52dp"
+        android:id="@+id/changetext"
         android:gravity="center"
         android:text="YOU LOSE"
         android:textSize="30dp"
+        android:textColor="@color/black"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/retry"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
         app:layout_constraintVertical_bias="0.0" />
-
     <ImageView
         android:id="@+id/retry"
         android:layout_width="79dp"
@@ -43,7 +44,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lottie"
         app:layout_constraintVertical_bias="0.349" />
-
     <Button
         android:layout_width="118dp"
         android:layout_height="63dp"
@@ -56,5 +56,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/retry"
         app:layout_constraintVertical_bias="0.318" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>

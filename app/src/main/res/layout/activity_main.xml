@@ -6,6 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:layout_width="67dp"
+        android:layout_height="45dp"
+        android:id="@+id/viewpage"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+        app:layout_constraintVertical_bias="0.689" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -21,7 +30,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.139">
-
         <TextView
             android:id="@+id/textQuestion"
             android:layout_width="220dp"
@@ -32,9 +40,7 @@
             android:textAlignment="center"
             android:textColor="#332FA2"
             android:textSize="26sp" />
-
     </LinearLayout>
-
     <ImageView
         android:layout_width="46dp"
         android:layout_height="58dp"
@@ -45,20 +51,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.008" />
-
     <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/idea"
         android:layout_width="67dp"
         android:layout_height="71dp"
         android:layout_marginEnd="8dp"
-        android:id="@+id/idea"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/life"
-        app:layout_constraintVertical_bias="0.349"
+        app:layout_constraintVertical_bias="0.358"
+        app:lottie_loop="true"
         app:lottie_rawRes="@raw/idea" />
-
     <TextView
         android:id="@+id/life"
         android:layout_width="61dp"
@@ -73,8 +78,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
-
-
     <TextView
         android:id="@+id/score1"
         android:layout_width="126dp"
@@ -87,7 +90,6 @@
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/score"
         android:layout_width="61dp"
@@ -100,7 +102,6 @@
         android:textSize="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="393dp"
@@ -111,7 +112,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.36">
-
         <EditText
             android:id="@+id/editText1"
             android:layout_width="50dp"
@@ -131,7 +131,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
         <EditText
             android:id="@+id/editText2"
             android:layout_width="50dp"
@@ -151,7 +150,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
         <EditText
             android:id="@+id/editText3"
             android:layout_width="50dp"
@@ -171,7 +169,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
         <EditText
             android:id="@+id/editText4"
             android:layout_width="50dp"
@@ -191,8 +188,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
-
         <EditText
             android:id="@+id/editText5"
             android:layout_width="50dp"
@@ -212,8 +207,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
-
         <EditText
             android:id="@+id/editText6"
             android:layout_width="50dp"
@@ -233,7 +226,6 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
         <EditText
             android:id="@+id/editText7"
             android:layout_width="50dp"
@@ -253,9 +245,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintVertical_bias="0.306" />
-
     </LinearLayout>
-
     <Button
         android:id="@+id/A"
         android:layout_width="47dp"
@@ -269,7 +259,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.572" />
-
     <Button
         android:id="@+id/E"
         android:layout_width="47dp"
@@ -283,7 +272,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571" />
-
     <Button
         android:id="@+id/D"
         android:layout_width="47dp"
@@ -297,7 +285,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571" />
-
     <Button
         android:id="@+id/F"
         android:layout_width="47dp"
@@ -311,7 +298,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571" />
-
     <Button
         android:id="@+id/C"
         android:layout_width="47dp"
@@ -325,9 +311,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.572" />
-
     <Button
-
         android:id="@+id/B"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -340,9 +324,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.571" />
-
     <Button
-
         android:id="@+id/G"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -355,9 +337,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
-
         android:id="@+id/H"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -370,7 +350,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
         android:id="@+id/L"
         android:layout_width="47dp"
@@ -384,7 +363,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
         android:id="@+id/I"
         android:layout_width="47dp"
@@ -398,7 +376,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
         android:id="@+id/J"
         android:layout_width="47dp"
@@ -412,7 +389,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
         android:id="@+id/K"
         android:layout_width="47dp"
@@ -426,9 +402,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.668" />
-
     <Button
-
         android:id="@+id/M"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -441,7 +415,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
         android:id="@+id/P"
         android:layout_width="47dp"
@@ -455,7 +428,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
         android:id="@+id/O"
         android:layout_width="47dp"
@@ -469,7 +441,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
         android:id="@+id/Q"
         android:layout_width="47dp"
@@ -483,7 +454,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
         android:id="@+id/R1"
         android:layout_width="47dp"
@@ -497,9 +467,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
-
         android:id="@+id/N"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -512,9 +480,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.767" />
-
     <Button
-
         android:id="@+id/S"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -527,7 +493,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
         android:id="@+id/X"
         android:layout_width="47dp"
@@ -541,7 +506,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
         android:id="@+id/V"
         android:layout_width="47dp"
@@ -555,7 +519,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
         android:id="@+id/U"
         android:layout_width="47dp"
@@ -569,7 +532,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
         android:id="@+id/W"
         android:layout_width="47dp"
@@ -583,9 +545,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
-
         android:id="@+id/T"
         android:layout_width="47dp"
         android:layout_height="50dp"
@@ -598,7 +558,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.864" />
-
     <Button
         android:id="@+id/Y"
         android:layout_width="47dp"
@@ -613,7 +572,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
-
     <Button
         android:id="@+id/Z"
         android:layout_width="47dp"
@@ -627,5 +585,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.963" />
-
+    <TextView
+        android:id="@+id/timer"
+        android:layout_width="87dp"
+        android:layout_height="97dp"
+        android:textSize="20sp"
+        android:drawableTop="@drawable/ic_time"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout"
+        app:layout_constraintTop_toBottomOf="@+id/score"
+        app:layout_constraintVertical_bias="0.298" />
 </androidx.constraintlayout.widget.ConstraintLayout>
